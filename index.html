@@ -16,7 +16,7 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Microsoft Yahei UI Light", "Segoe UI", Roboto, Helvetica, "PingFang SC", "WenQuanYi Micro Hei", ui-icon, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+      font-family: "Microsoft Yahei", "Segoe UI", Roboto, Helvetica, "PingFang SC" !important;
       color: #fff;
       font-weight: 300;
     }
@@ -71,7 +71,7 @@
     <div id="counter">
     </div>
     <div id="credits">
-      <p><a href="http://meiqiu.me" target="blank">主页</a> | <a href="http://xiao.meiqiu.me" target="blank">小煤球</a></p>
+      <p><a href="https://meiqiu.me" target="blank">主页</a> | <a href="https://xiao.meiqiu.me" target="blank">小煤球</a></p>
     </div>
     <div id="world" ></div>
   </div>
@@ -84,18 +84,18 @@
   <script src="js/demo.js"></script>
   <script src="js/requestAnimationFrame.js"></script>
   <script type="text/javascript">
-    var start = new Date(2017, 4, 18, 20);
+    var start = new Date(2015, 8, 10, 20, 0 ,0);
     countdown.resetLabels();
-    countdown.setLabels('毫秒|秒|分|小时|天|周|个月|年|十年', '毫秒|秒|分|小时|天|周|个月|年|十年', '', ', ', '已经到来')
+    countdown.setLabels('毫秒|秒|分|小时|天|周|个月|年|十年', '毫秒|秒|分|小时|天|周|个月|年|十年', '', '', '已经到来')
 
     function updateCountdown() {
       var counter = document.getElementById('counter');
       var msg = countdown(start, null);
-      counter.innerHTML = '即将到来 ' + msg;
+      counter.innerHTML = '我的球 ' + msg;
       requestAnimationFrame(updateCountdown, document.getElementById('counter'));
     }
     updateCountdown();
   </script>
 </body>
 
-</html>
+</html> 
